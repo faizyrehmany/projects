@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Create User</title>
+    <script src="https://unpkg.com/@tailwindcss/browser@4"></script>
+
+</head>
+<body class="bg-zinc-900">
+
+    <div class="w-full h-full bg-zinc-900 text-white p-10">
+    <div class="nav mb-10">
+        <a href="/read" class="text-blue-400 underline">Read Users</a>
+    </div>
+        
+        <h2 class="text-2xl font-bold mt-4">Update User</h2>
+        <form action="/update/<%= user._id %>" method="Post">
+            <input type="text" name="name" placeholder="name" value="<%= user.name %>"
+                   class="bg-gray-700 text-white px-3 py-2 rounded-md focus:outline-none flex-1">
+            <input type="email" name="email" placeholder="email" value="<%= user.email %>"
+                   class="bg-gray-700 text-white px-3 py-2 rounded-md focus:outline-none flex-1">
+            <input type="url" name="image" placeholder="image url" value="<%= user.image%>"
+                   class="bg-gray-700 text-white px-3 py-2 rounded-md focus:outline-none flex-1">
+            <button type="submit" 
+                    class="bg-yellow-500 hover:bg-blue-200 text-black px-4 py-2 rounded-md">
+                Update User
+            </button>
+        </form>
+    </div>
+
+</body>
+</html>
