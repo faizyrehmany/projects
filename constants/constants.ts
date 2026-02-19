@@ -8,6 +8,9 @@ export const colors = {
     lightBlue: "#6DB6FE",
     blueButton: "#3299FF",
     oceanBlue: "#0068FF",
+    textColor: "#FFFFFF",
+    darkMod: "#D9D9D9",
+    whiteCon: "#F1FFF3"
 };
 
 export const fonts = {
@@ -17,8 +20,15 @@ export const fonts = {
     bold: "Poppins-Bold",
 };
 
-// src/constants/images.ts
-export const images = {
-        logo: require("../assets/images/logo.png"),
-    };
+export const onboardingData = [
+    {
+        title: "Welcome To\nExpense Manager",
+        image: require("../assets/images/onboard1.png"),
+    },
+    {
+        title: "Are You Ready To\nTake Control Of\nYour Finaces?",
+        image: require("../assets/images/onboard2.png"),
+    },
+];
+
 
